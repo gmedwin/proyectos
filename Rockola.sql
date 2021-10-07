@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `rockola` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `rockola`;
 -- MySQL dump 10.13  Distrib 8.0.26, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: rockola
@@ -133,7 +131,7 @@ CREATE TABLE `usuario` (
   `cod_usuario` int NOT NULL,
   `nombres` varchar(45) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
   `apellidos` varchar(45) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
-  `email` varchar(45) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `email` varchar(45) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT '',
   `sexo` varchar(2) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
   `password` varchar(45) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
   `cod_nacionalidad` int NOT NULL,
@@ -163,4 +161,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-10-03 12:15:55
+-- Dump completed on 2021-10-06 19:22:41
